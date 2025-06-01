@@ -1,6 +1,7 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.experienceService.experienceServiceImpl;
 import com.example.onlineapp.entities.Experience;
 import com.example.onlineapp.repositories.ExperienceRepository;
+import com.example.onlineapp.services.experienceService.ExperienceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

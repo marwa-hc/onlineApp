@@ -1,8 +1,9 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.adminService.adminServiceImpl;
 
 
 import com.example.onlineapp.entities.Administrateur;
 import com.example.onlineapp.repositories.AdminRepository;
+import com.example.onlineapp.services.adminService.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

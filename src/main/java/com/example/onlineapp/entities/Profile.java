@@ -1,11 +1,10 @@
 package com.example.onlineapp.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import jakarta.persistence.Entity;
-
 
 @Entity
 @Table(name = "Profile")
@@ -16,14 +15,14 @@ public class Profile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer profileId;
-    private String Pays;
-    private String Entreprise;
-    private String Email;
+    private String pays;
+    private String entreprise;
+    private String email;
     private String email_alias;
-    private Boolean Disponibilite;
-    private Boolean ModificationMotspasse;
-
+    private Boolean disponibilite;
+    private Boolean modificationMotspasse;
     @ManyToOne
-    @JoinColumn(name = "employe_id")  // nom de la colonne FK en base
+    @JoinColumn(name = "employe_id")  // FK column in DB
+    @JsonBackReference
     private Employe employe;
 }

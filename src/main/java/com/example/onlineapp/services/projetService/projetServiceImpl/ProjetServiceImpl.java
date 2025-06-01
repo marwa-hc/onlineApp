@@ -1,6 +1,7 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.projetService.projetServiceImpl;
 import com.example.onlineapp.entities.Projet;
 import com.example.onlineapp.repositories.ProjetRepository;
+import com.example.onlineapp.services.projetService.ProjetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

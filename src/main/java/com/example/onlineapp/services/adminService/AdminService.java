@@ -1,4 +1,4 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.adminService;
 
 import com.example.onlineapp.entities.Administrateur;
 

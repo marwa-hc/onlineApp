@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 import jakarta.persistence.Entity;
 
-
 @Entity
 @Table(name = "Experience")
 @Data
@@ -19,10 +18,8 @@ public class Experience {
     @ManyToOne
     @JoinColumn(name = "ID_Employe")
     private Employe employe;
-
     private String categories;
     private String role;
-
     @Column(columnDefinition = "TEXT")
     private String description;
 }

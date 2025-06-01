@@ -1,4 +1,4 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.employeService;
 import com.example.onlineapp.entities.Employe;
 
 import java.util.List;

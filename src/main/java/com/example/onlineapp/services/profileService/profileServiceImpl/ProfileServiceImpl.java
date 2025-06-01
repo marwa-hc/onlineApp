@@ -1,13 +1,14 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.profileService.profileServiceImpl;
 import com.example.onlineapp.entities.Profile;
 import com.example.onlineapp.repositories.ProfileRepository;
+import com.example.onlineapp.services.profileService.ProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 @Service
-public class ProfileServiceImpl implements ProfileService{
+public class ProfileServiceImpl implements ProfileService {
 
     @Autowired
     private ProfileRepository profileRepository;
