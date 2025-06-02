@@ -1,13 +1,13 @@
 package com.example.onlineapp.controllers;
 import com.example.onlineapp.entities.Projet;
-import com.example.onlineapp.services.ProjetService;
+import com.example.onlineapp.services.projetService.ProjetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/projets")
+@RequestMapping("/projets")
 public class ProjetController {
 
     @Autowired

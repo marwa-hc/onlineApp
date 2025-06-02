@@ -1,4 +1,4 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.projetService;
 import com.example.onlineapp.entities.Projet;
 
 import java.util.List;

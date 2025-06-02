@@ -1,12 +1,12 @@
 package com.example.onlineapp.controllers;
 import com.example.onlineapp.entities.Profile;
-import com.example.onlineapp.services.ProfileService;
+import com.example.onlineapp.services.profileService.ProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/api/profile")
+@RequestMapping("/profile")
 public class ProfileController {
 
     @Autowired

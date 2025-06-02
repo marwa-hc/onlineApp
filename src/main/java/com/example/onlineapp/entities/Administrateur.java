@@ -11,14 +11,12 @@ import jakarta.persistence.Id;
 
 import jakarta.persistence.Entity;
 
-
 @Entity
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class Administrateur {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idAdmin;
@@ -27,6 +25,4 @@ public class Administrateur {
     private String prenom;
     private String nomUtilisateur;
     private String motDePasse;
-
-
 }

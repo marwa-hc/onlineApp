@@ -1,7 +1,8 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.employeService.employeServiceImpl;
 
 import com.example.onlineapp.entities.Employe;
 import com.example.onlineapp.repositories.EmployeRepository;
+import com.example.onlineapp.services.employeService.EmployeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

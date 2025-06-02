@@ -1,13 +1,14 @@
-package com.example.onlineapp.services;
+package com.example.onlineapp.services.educationService.educationServiceImpl;
 import com.example.onlineapp.entities.Education;
 import com.example.onlineapp.repositories.EducationRepository;
+import com.example.onlineapp.services.educationService.EducationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 @Service
-public class EducationServiceImpl implements EducationService{
+public class EducationServiceImpl implements EducationService {
 
     @Autowired
     private EducationRepository educationRepository;

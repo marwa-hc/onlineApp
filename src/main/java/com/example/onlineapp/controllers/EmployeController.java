@@ -1,13 +1,13 @@
 package com.example.onlineapp.controllers;
 
 import com.example.onlineapp.entities.Employe;
-import com.example.onlineapp.services.EmployeService;
+import com.example.onlineapp.services.employeService.EmployeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@RequestMapping("/api/employes")
+@RequestMapping("/employes")
 public class EmployeController {
 
     @Autowired
