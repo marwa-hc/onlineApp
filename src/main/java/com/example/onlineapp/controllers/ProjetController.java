@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/projets")
 public class ProjetController {
@@ -13,11 +14,10 @@ public class ProjetController {
     @Autowired
     private ProjetService projetService;
 
-    @PostMapping
-    public Projet createProjet(@RequestBody Projet projet) {
-        return projetService.createProjet(projet);
+    @PostMapping("/{idEmploye}")
+    public Projet createProjet(@PathVariable Long idEmploye, @RequestBody Projet projet) {
+        return projetService.createProjet(projet, idEmploye);
     }
-
     @GetMapping("/{id}")
     public Projet getProjetById(@PathVariable Integer id) {
         return projetService.getProjetById(id);
