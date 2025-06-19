@@ -4,7 +4,7 @@ import com.example.onlineapp.entities.Projet;
 import java.util.List;
 
 public interface ProjetService {
-    Projet createProjet(Projet projet);
+    Projet createProjet(Projet projet, Long idEmployee);
     Projet getProjetById(Integer id);
     List<Projet> getAllProjets();
     Projet updateProjet(Integer id, Projet projet);

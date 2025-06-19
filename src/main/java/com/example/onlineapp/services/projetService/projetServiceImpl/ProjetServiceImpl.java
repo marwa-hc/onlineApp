@@ -1,6 +1,8 @@
 package com.example.onlineapp.services.projetService.projetServiceImpl;
+import com.example.onlineapp.entities.Employe;
 import com.example.onlineapp.entities.Projet;
 import com.example.onlineapp.repositories.ProjetRepository;
+import com.example.onlineapp.services.employeService.employeServiceImpl.EmployeServiceImpl;
 import com.example.onlineapp.services.projetService.ProjetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,9 +15,13 @@ public class ProjetServiceImpl implements ProjetService {
 
     @Autowired
     private ProjetRepository projetRepository;
+    @Autowired
+    EmployeServiceImpl employeService;
 
     @Override
-    public Projet createProjet(Projet projet) {
+    public Projet createProjet(Projet projet, Long idEmployee) {
+        Employe employe = employeService.getEmployeById(Math.toIntExact(idEmployee));
+        projet.setEmploye(employe);
         return projetRepository.save(projet);
     }
 
